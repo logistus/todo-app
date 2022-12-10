@@ -98,12 +98,12 @@ body {
 
 body.light {
   background-color: var(--very-light-grayish-blue);
-  background-image: url("images/bg-desktop-light.jpg");
+  background-image: url("/images/bg-desktop-light.jpg");
 }
 
 body.dark {
   background-color: var(--very-dark-blue);
-  background-image: url("images/bg-desktop-dark.jpg");
+  background-image: url("/images/bg-desktop-dark.jpg");
 }
 
 @media (min-width: 50em) {
