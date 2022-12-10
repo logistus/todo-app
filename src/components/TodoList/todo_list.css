@@ -1,0 +1,66 @@
+.todo-list,
+.filters-mobile-wrapper {
+  width: 100%;
+  background-color: white;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.todo-list.dark,
+.filters-mobile-wrapper.dark {
+  background-color: var(--very-dark-desaturated-blue);
+}
+
+.todo-list-footer,
+.filters-mobile-wrapper {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: .8rem;
+  color: var(--dark-grayish-blue);
+}
+
+.todo-list-footer a:hover {
+  color: var(--very-dark-grayish-blue);
+}
+
+.todo-list-footer.dark a:hover {
+  color: var(--light-grayish-blue);
+}
+
+.filters,
+.filters-mobile {
+  list-style: none;
+  justify-content: space-between;
+  gap: .5rem;
+  font-weight: 700;
+  display: none;
+}
+
+.filters li a.active,
+.filters-mobile li a.active {
+  color: var(--filter-active);
+}
+
+.filters-mobile-wrapper {
+  justify-content: space-around;
+}
+
+.filters-mobile {
+  display: flex;
+}
+
+@media(min-width: 50em) {
+  .filters {
+    display: flex;
+  }
+
+  .filters-mobile {
+    display: none;
+  }
+
+  .filters-mobile-wrapper {
+    display: none;
+  }
+}
